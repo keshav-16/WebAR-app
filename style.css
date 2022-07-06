@@ -1,0 +1,114 @@
+*{
+    margin :0;
+    padding : 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+nav{
+    display: flex;
+    padding: 0.7% 6%;
+    background-color: aliceblue;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    opacity: 0.8;
+    position: sticky;
+    top: 0;
+}
+
+.logo{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 10px;
+    color: #6b705c;
+    position: relative;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.nav_top{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 10px;
+    color: #6f1d1b;
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    cursor : pointer;
+}
+
+.content{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+.content h1{
+    font-size: 65px;
+    font-weight: 600;
+    color : #001219;
+    padding-bottom: 30px;
+}
+
+.cont_row {
+    color: #001219;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    text-decoration : none;
+}
+.cont_col {
+    flex-basis: 31%;
+    background: whitesmoke;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.cont_col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0px;
+    text-decoration: none;
+}
+.cont_col:hover{
+    box-shadow: 0 0 20px 0 #0b090a;
+    background-color: #212529;
+    color: #d8e2dc;
+}
+@media(max-width: 700px){
+    .cont_row{
+        flex-direction: column;
+       justify-items: center;
+    }
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #eee;
+    z-index: 3;
+    opacity: 0.9;
+}
+.footer h4{
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer p{
+    margin-bottom: 10px;
+}
+.icons .fa{
+    color: #0b090a;
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.icons .fa:hover{
+color: #3a5a40;
+}
