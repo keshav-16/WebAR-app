@@ -4,6 +4,41 @@
 <script src="../js/aframe-ar.js"></script>
 <body style="margin: 0px; overflow: hidden;">
 
+    <script>
+
+        AFRAME.registerComponent('updater', {
+        
+            init: function()
+            {
+                this.num = 0;
+
+            },
+            tick: function (time, timeDelta) 
+            {
+                this.num += 1;
+                
+            }
+            
+        });
+        
+       
+        AFRAME.registerComponent('spinner', {
+        
+            init: function()
+            {
+                this.el.object3D.scale.set(0.75, 0.75, 0.75);
+            },
+            
+            tick: function (time, timeDelta) 
+            {
+                this.el.object3D.rotation.y += 0.01
+            }
+            
+        });
+        
+        
+        </script>
+
 <a-scene embedded vr-mode-ui="enabled: false;" arjs="debugUIEnabled: false;">
 
     <a-assets>
@@ -18,6 +53,7 @@
     </a-marker>
     
     <a-entity camera></a-entity>
+    <a-entity updater></a-entity>
     
 </a-scene>
 </body>
